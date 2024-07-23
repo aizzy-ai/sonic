@@ -26,7 +26,7 @@ pub enum StoreItemError {
 }
 
 const STORE_ITEM_PART_LEN_MIN: usize = 0;
-const STORE_ITEM_PART_LEN_MAX: usize = 128;
+const STORE_ITEM_PART_LEN_MAX: usize = 512;
 
 impl<'a> StoreItemPart<'a> {
     pub fn from_str(part: &'a str) -> Result<Self, ()> {
